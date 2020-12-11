@@ -1,0 +1,10 @@
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\bin\Debug\HalszkaCiesielskaZad3.exe.config
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\bin\Debug\HalszkaCiesielskaZad3.exe
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\bin\Debug\HalszkaCiesielskaZad3.pdb
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.csprojAssemblyReference.cache
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.FromMain.resources
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.Properties.Resources.resources
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.csproj.GenerateResource.cache
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.exe
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.pdb
+C:\SZKÓŁKA\KREDEK\Laboratorium3\zadanie domowe\HalszkaCiesielskaZad3\HalszkaCiesielskaZad3\obj\Debug\HalszkaCiesielskaZad3.FormLogin.resources
