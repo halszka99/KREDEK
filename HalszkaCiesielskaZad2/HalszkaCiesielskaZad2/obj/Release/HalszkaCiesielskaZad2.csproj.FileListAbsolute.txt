@@ -1,0 +1,10 @@
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\bin\Release\HalszkaCiesielskaZad2.exe.config
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\bin\Release\HalszkaCiesielskaZad2.exe
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\bin\Release\HalszkaCiesielskaZad2.pdb
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.FormEnd.resources
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.FormMain.resources
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.Properties.Resources.resources
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.csproj.GenerateResource.cache
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.exe
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.pdb
+C:\SZKÓŁKA\KREDEK\Laboratorium2\zadanie domowe\HalszkaCiesielskaZad2\HalszkaCiesielskaZad2\obj\Release\HalszkaCiesielskaZad2.csprojAssemblyReference.cache
