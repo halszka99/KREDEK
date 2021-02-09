@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Add event";
+}
+<head>
+    <!--Importing google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<!--Page body-->
+<body>
+    <!--Added event information using view bags -->
+    <div>
+        <h2>
+            Event successfully added!
+        </h2>
+        <h3>
+            The star will be @ViewBag.Animal.
+        </h3>
+        <h4>
+            It will take place on @ViewBag.Date at @ViewBag.Time. Ticket cost is @ViewBag.Price.
+        </h4>
+    </div>
+</body>
+<style>
+    /* Setting body font to fraunces */
+    body {
+        font-family: 'Fraunces', serif;
+    }
+</style>

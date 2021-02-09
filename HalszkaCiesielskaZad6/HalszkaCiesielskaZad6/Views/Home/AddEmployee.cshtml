@@ -1,0 +1,71 @@
+﻿@using HalszkaCiesielskaZad6.Models
+@model EmployeeViewModel
+@{
+    ViewData["Title"] = "Add employee";
+}
+<!--Add employee form -->
+@using (Html.BeginForm("AddEmployee", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <head>
+        <!-- Importing google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <!--Add employee form body -->
+    <body>
+        <div class="form-horizontal">
+            <!--Page header-->
+            <h4>ADD NEW EMPLOYEE</h4>
+            <hr />
+            <!--First name -->
+            <div class="form-group">
+                <!-- First name label-->
+                @Html.LabelFor(model => model.FirstName, "First name: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for first name-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", @Type = "text", @placeholder = "First name" } })
+                </div>
+            </div>
+            <!--Last name-->
+            <div class="form-group">
+                <!--Last name label-->
+                @Html.LabelFor(model => model.LastName, "Last name: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for last name-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", @Type = "text", @placeholder = "Last name" } })
+                </div>
+            </div>
+            <!--Profession -->
+            <div class="form-group">
+                <!--Profession label-->
+                @Html.LabelFor(model => model.Profession, "Profession: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for profession-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Profession, new { htmlAttributes = new { @class = "form-control", @Type = "text", @placeholder = "Profession" } })
+                </div>
+            </div>
+            <!--Salary-->
+            <div class="form-group">
+                <!--Salary label-->
+                @Html.LabelFor(model => model.Salary, "Salary: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for salary-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Salary, new { htmlAttributes = new { @class = "form-control", @Type = "number", @placeholder = "0", min = "0" } })
+                </div>
+            </div>
+            <!--Button add employee-->
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add employee" class="btn btn-outline-dark" />
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        /* Setting body font to fraunces */
+        body {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+}

@@ -1,0 +1,71 @@
+﻿@using HalszkaCiesielskaZad6.Models
+@model EventViewModel
+@{
+    ViewData["Title"] = "Add event";
+}
+<!--Add event form-->
+@using (Html.BeginForm("AddEvent", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <head>
+        <!-- Importing google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <!--Add event form body -->
+    <body>
+        <div class="form-horizontal">
+            <!--Page header-->
+            <h4>ADD NEW EVENT</h4>
+            <hr />
+            <!--Animal name-->
+            <div class="form-group">
+                <!--Animal name label -->
+                @Html.LabelFor(model => model.Animal.Name, "Animal name: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for animal label -->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Animal.Name, new { htmlAttributes = new { @class = "form-control", @Type = "text", @placeholder = "Animal name" } })
+                </div>
+            </div>
+            <!-- Date-->
+            <div class="form-group">
+                <!--Date label-->
+                @Html.LabelFor(model => model.Date, "Date: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for date-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control", @Type = "date" } })
+                </div>
+            </div>
+            <!-- Time-->
+            <div class="form-group">
+                <!--Time label-->
+                @Html.LabelFor(model => model.Time, "Time: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for time-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Time, new { htmlAttributes = new { @class = "form-control", @Type = "time" } })
+                </div>
+            </div>
+            <!--Ticket price-->
+            <div class="form-group">
+                <!-- Ticket price label-->
+                @Html.LabelFor(model => model.TicketPrice, "Price: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for ticket price-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TicketPrice, new { htmlAttributes = new { @class = "form-control", @Type = "number", @placeholder = "0", min = "0" } })
+                </div>
+            </div>
+            <!--Button add event-->
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add event" class="btn btn-outline-dark" />
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        /* Setting body font to fraunces */
+        body {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+}

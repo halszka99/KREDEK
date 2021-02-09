@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Add employee";
+}
+<head>
+    <!--Importing google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<!--Page body-->
+<body>
+    <!--Added employee information using view bags -->
+    <div>
+        <h2>
+            Employee @ViewBag.Name successfully added!
+        </h2>
+        <h4>
+            He is a brand new @ViewBag.Profession.
+        </h4>
+    </div>
+</body>
+<style>
+    /* Setting body font to fraunces */
+    body {
+        font-family: 'Fraunces', serif;
+    }
+</style>

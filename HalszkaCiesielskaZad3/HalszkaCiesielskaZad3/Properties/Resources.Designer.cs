@@ -61,6 +61,16 @@ namespace HalszkaCiesielskaZad3.Properties {
         }
         
         /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap animals {
+            get {
+                object obj = ResourceManager.GetObject("animals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Data Source=LAPTOP-8GPSSUD9\KREDEKSQL; Database=ZOO;Trusted_Connection = yes.
         /// </summary>
         internal static string ConnectionString {

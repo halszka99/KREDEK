@@ -1,0 +1,62 @@
+﻿@using HalszkaCiesielskaZad6.Models
+@model AnimalViewModel
+@{
+    ViewData["Title"] = "Add animal";
+}
+<!--Add animal form-->
+@using (Html.BeginForm("AddAnimal", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <head>
+        <!-- Importing google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <!--Add animal form body -->
+    <body>
+        <div class="form-horizontal">
+            <!--Page header-->
+            <h4>ADD NEW ANIMAL</h4>
+            <hr />
+            <!--Animal name-->
+            <div class="form-group">
+                <!--Name label -->
+                @Html.LabelFor(model => model.Name, "Name: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!-- Box for name -->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @Type = "text", @placeholder = "Name" } })
+                </div>
+            </div>
+            <!--Animal class name-->
+            <div class="form-group">
+                <!--Aninmal class name label -->
+                @Html.LabelFor(model => model.AnimalClass, "Class name: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!--Box for animal class name-->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.AnimalClass, new { htmlAttributes = new { @class = "form-control", @Type = "text", @placeholder = "Class name: " } })
+                </div>
+            </div>
+            <!--Animal cage-->
+            <div class="form-group">
+                <!--Cage label-->
+                @Html.LabelFor(model => model.Cage, "Cage: ", htmlAttributes: new { @class = "control-label col-md-2" })
+                <!-- Box for cage -->
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Cage, new { htmlAttributes = new { @class = "form-control", @Type = "number", @placeholder = "1", min = "1" } })
+                </div>
+            </div>
+            <!-- Button add animal-->
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Add animal" class="btn btn-outline-dark" />
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        /* Setting body font to fraunces */
+        body {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+}

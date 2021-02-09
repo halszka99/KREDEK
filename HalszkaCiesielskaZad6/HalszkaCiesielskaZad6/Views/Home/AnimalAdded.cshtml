@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Add animal";
+}
+<head>
+    <!--Importing google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<!--Page body-->
+<body>
+    <!--Added animal information using view bags -->
+    <div>
+        <h2>
+            Animal @ViewBag.AnimalName successfully added!
+        </h2>
+        <h4>
+            It is a brand new @ViewBag.AnimalClass in our zoo and lives in cage @ViewBag.AnimalCage.
+        </h4>
+    </div>
+</body>
+<style>
+    /* Setting body font to fraunces */
+    body {
+        font-family: 'Fraunces', serif;
+    }
+</style>

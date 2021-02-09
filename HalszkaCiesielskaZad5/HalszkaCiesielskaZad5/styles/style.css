@@ -1,0 +1,131 @@
+﻿/*Style of whole page body*/
+body {
+    background-color: antiquewhite !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Style of h1 tag*/
+h1 {
+    font-family: 'Redressed', cursive;
+}
+/*Style of h2 tag*/
+h2 {
+    font-family: 'Teko', cursive;
+}
+/*Style of class instruction*/
+.instruction {
+    font-family: 'Teko', cursive;
+    font-size: 30px;
+}
+/*Style of buttons*/
+button {
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: saddlebrown;
+}
+/*Style of tablinks*/
+.tablinks {
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    margin: 2px 1px;
+    background-color:burlywood;
+}
+/*Style of images with class items*/
+.items {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+/*Style of class of right half of page*/
+.right-half {
+    display:flex; 
+    flex-direction:column; 
+    margin-left: 250px; 
+    margin-top: 60px; 
+}
+/*Style of div in right half of page*/
+.right-half div{
+    margin-top: 30px;
+}
+/*Style of class of left half of page*/
+.left-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Style of class content*/
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap; 
+}
+/*Style of class start */
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Style of class info*/
+.info {
+    font-family: 'Teko', cursive;
+    font-size: 30px;
+    padding: 15px;
+    padding-top:20px; 
+}
+/*Style of button start*/
+#start-button {
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+}
+/*Style of beaver image*/
+#beaver-img {
+    cursor: pointer;
+    width:450px;
+    height:450px;
+}
+/*Style of food image*/
+#food-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Style of pills image*/
+#pills-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Style of gold image*/
+#gold-image {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+/*Style of h4 tag*/
+h4 {
+    position:absolute; 
+    top:0; 
+    left:130px; 
+}
+#times-table {
+    margin-top: 10px;
+    width: 500px;
+    background-color:lightgray;
+}
+

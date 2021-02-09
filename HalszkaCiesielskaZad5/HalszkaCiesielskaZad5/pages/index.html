@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Page data-->
+<head>
+    <meta charset="utf-8" />
+    <!--Page title-->
+    <title>Beaver clicker</title>
+    <!--Page style-->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <!--Fonts import-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Teko:wght@300&display=swap');
+    </style>
+</head>
+<!--Page design-->
+<body>
+
+    <!--Container with subpages-->
+    <div class="tab">
+        <button class="tablinks">MAIN</button>
+        <button class="tablinks" onclick="window.location.href='./instruction.html'">INSTRUCTION</button>
+        <button class="tablinks" onclick="window.location.href='./info.html'">INFO</button>
+    </div>
+    <!--Container with welcome message-->
+    <div class="description">
+        <h1 id="welcome-message">Welcome to the beaver clicker!</h1>
+    </div>
+    <!--Container with content of page-->
+    <div class="content">
+        <!--Container with left half of page-->
+        <div class="left-half">
+            <!--Container with beaver image-->
+            <div>
+                <img id="beaver-img" src="../Images/beaver.png" />
+            </div>
+            <!--Container with gold image and amount of gold-->
+            <div id="gold-image">
+                <img class="items" src="../Images/gold.png" />
+                <p id="gold-level">0</p>
+            </div>
+        </div>
+        <!--Container with right half of page-->
+        <div class="right-half">
+            <!--Container with button start-->
+            <div class="start">
+                <button id="start-button" onclick="Game();">START</button>
+            </div>
+            <!--Container with button feed and progress bar -->
+            <div>
+                <button id="feed-button">FEED</button>
+                <progress id="food-bar" max="100" value="100"></progress>
+            </div>
+            <!--Container with food image and food level -->
+            <div id="food-image">
+                <img id="food-img" class="items" src="../Images/food.png" />
+                <h4 id="food-level">0</h4>
+            </div>
+            <!--Container with button cure and progress bar -->
+            <div>
+                <button id="cure-button">CURE</button>
+                <progress id="health-bar" max="100" value="100"></progress>
+            </div>
+            <!--Container with pills image and pills level -->
+            <div id="pills-image">
+                <img id="pills-img" class="items" src="../Images/pills.png" />
+                <h4 id="pills-level">0</h4>
+            </div>
+        </div>
+    </div>
+    <!--Script import-->
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

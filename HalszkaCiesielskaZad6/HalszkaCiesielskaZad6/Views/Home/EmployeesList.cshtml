@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Employees List";
+}
+@model List<HalszkaCiesielskaZad6.Models.EmployeeViewModel>
+@using (Html.BeginForm("AddEmployee", "Home", FormMethod.Get))
+{
+    <head>
+        <!--Importing google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <!--Page body-->
+<body>
+    <!--Page header-->
+    <h1>Employee list</h1>
+    <!--Table with employees-->
+    <table class="table table-bordered table-striped">
+        <!--Table header -->
+        <tr>
+            <th class="text-center">First Name </th>
+            <th class="text-center">Last Name </th>
+            <th class="text-center">Profession</th>
+            <th class="text-center">Salary</th>
+        </tr>
+        <!--Filling table with data-->
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>
+                    @employee.FirstName
+                </td>
+                <td>
+                    @employee.LastName
+                </td>
+                <td>
+                    @employee.Profession
+                </td>
+                <td>
+                    @employee.Salary
+                </td>
+            </tr>
+        }
+    </table>
+    <!--Button go to add employee-->
+    <div class="form-group d-flex justify-content-center" id="button">
+        <div>
+            <input type="submit" value="Go to add employee" class="btn btn-outline-dark" />
+        </div>
+    </div>
+</body>
+    <style>
+        /* Setting body font to fraunces */
+        body {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+}

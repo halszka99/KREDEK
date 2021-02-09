@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <!--Importing google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<!--Page body-->
+<body>
+    <!--Image-->
+    <div class="image">
+        <img src="@Url.Content("~/animal.jpg")" width="960" height="375">
+    </div>
+    <!--Button add employee-->
+    <div class="form-group">
+        <div>
+            <input type="submit" value="Add employee" class="btn btn-outline-dark btn-block" onclick="window.location.href='@Url.Action("AddEmployee")'" />
+        </div>
+    </div>
+    <!--Button add animal-->
+    <div class="form-group">
+        <div>
+            <input type="submit" value="Add animal" class="btn btn-outline-dark btn-block" onclick="window.location.href='@Url.Action("AddAnimal")'" />
+        </div>
+    </div>
+    <!--Button add event-->
+    <div class="form-group">
+        <div>
+            <input type="submit" value="Add event" class="btn btn-outline-dark btn-block" onclick="window.location.href='@Url.Action("AddEvent")'" />
+        </div>
+    </div>
+    <!--Displaying last added event using tempdata-->
+    <div>
+        Last added event: @TempData["LastAddedEvent"]
+    </div>
+    <!--Displaying last added animal using tempdata-->
+    <div>
+        Last added animal: @TempData["LastAddedAnimal"]
+    </div>
+    <!--Displaying last added employee using tempdata-->
+    <div>
+        Last added employee: @TempData["LastAddedEmployee"]
+    </div>
+</body>
+<style>
+    /* Setting body font to fraunces */
+    body {
+        font-family: 'Fraunces', serif;
+    }
+    /*Setting image style*/
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+</style>

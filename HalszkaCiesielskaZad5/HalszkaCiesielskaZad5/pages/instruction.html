@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Page data-->
+<head>
+    <meta charset="utf-8" />
+    <!--Page title-->
+    <title>Beaver clicker</title>
+    <!--Page style-->
+    <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+    <!--Boostrap import-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Fonts import-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Teko:wght@300&display=swap');
+    </style>
+</head>
+<!--Page design-->
+<body>
+    <!--Container with subpages-->
+    <div class="tab">
+        <button class="tablinks" onclick="window.location.href='./index.html'">MAIN</button>
+        <button class="tablinks">INSTRUCTION</button>
+        <button class="tablinks" onclick="window.location.href='./info.html'">INFO</button>
+    </div>
+    <!--Container with instruction-->
+    <div class="instruction">
+        <h2>Don't let your beaver die! Feed him when he is hungry and cure him when he is sick.</h2>
+        You can earn money by clicking on beaver. Amount of your gold is displayed next to gold image.<br />
+        You can buy food and pills by clicking on pictures of them. Amount of it is displayed on image.<br />
+        Hunger and health levels are shown on progress bars. You can check the exact level by placing cursor on progress bar. <br />
+        You can feed and cure beaver using buttons FEED and CURE. <br />
+        You win if your beaver will stay alive for 3 minutes. <br />
+    </div>
+    <!--Container with table with best times-->
+    <div>
+        <table class="table table-bordered" id="times-table">
+        </table>
+    </div>
+    <!--Script import-->
+    <script src="../scripts/script.js"></script>
+    <!--Calling function ShowTable() from script-->
+    <script>ShowTable();</script>
+</body>
+</html>

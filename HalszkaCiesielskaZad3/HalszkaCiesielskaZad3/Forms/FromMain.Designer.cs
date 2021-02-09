@@ -60,6 +60,7 @@
             this.dataGridViewList.RowTemplate.Height = 24;
             this.dataGridViewList.Size = new System.Drawing.Size(497, 351);
             this.dataGridViewList.TabIndex = 0;
+            this.dataGridViewList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewList_CellClick);
             // 
             // comboBoxContent
             // 

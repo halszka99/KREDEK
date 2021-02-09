@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Events List";
+}
+@model List<HalszkaCiesielskaZad6.Models.EventViewModel>
+@using (Html.BeginForm("AddEvent", "Home", FormMethod.Get))
+{
+<head>
+    <!--Importing google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+</head>
+<!--Page body-->
+    <body>
+        <!--Page header-->
+        <h1>Events list</h1>
+        <!--Table with events-->
+        <table class="table table-bordered table-striped">
+            <!--Table header -->
+            <tr>
+                <th class="text-center">Animal name </th>
+                <th class="text-center">Animal class </th>
+                <th class="text-center">Date </th>
+                <th class="text-center">Time </th>
+                <th class="text-center">Ticket price</th>
+            </tr>
+            <!--Filling table with data-->
+            @foreach (var show in Model)
+            {
+                <tr>
+                    <td>
+                        @show.Animal.Name
+                    </td>
+                    <td>
+                        @show.Animal.AnimalClass
+                    </td>
+                    <td>
+                        @show.Date.ToString("d")
+                    </td>
+                    <td>
+                        @show.Time.ToString("hh\\:mm")
+                    </td>
+                    <td>
+                        @show.TicketPrice
+                    </td>
+                </tr>
+            }
+        </table>
+        <!--Button go to add event-->
+        <div class="form-group d-flex justify-content-center" id="button">
+            <div>
+                <input type="submit" value="Go to add event" class="btn btn-outline-dark" />
+            </div>
+        </div>
+    </body>
+    <style>
+        /* Setting body font to fraunces */
+        body {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+}
