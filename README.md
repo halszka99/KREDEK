@@ -6,4 +6,3 @@ Technologies utilized while builiding this tasks:
 * Entity Framework
 * SQL
 * .NET Core
-* programming patterns
